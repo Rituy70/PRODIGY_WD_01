@@ -2,13 +2,13 @@ Prodigy Infotech Landing Page
 
 This landing page was developed as part of my Web Development Internship at Prodigy Infotech.
 
-Technologies Used
+Technologies Used:
 - HTML
 - CSS
 - JavaScript
 - Font Awesome (for icons)
 
-Project Overview
+Project Overview:
 This is a fully responsive and interactive landing page designed to represent Prodigy Infotech. It includes:
 
 - Homepage with animated text and visuals  
@@ -19,8 +19,8 @@ This is a fully responsive and interactive landing page designed to represent Pr
 - Contact form with support details  
 - Footer with working social media icons
 
-Deployment & Usage
+Deployment & Usage:
 The code is structured into separate HTML, CSS, and JavaScript files for clarity. It can be run locally using any browser or with the Live Server extension in VS Code.
 
-Notes
+Notes:
 The project was also tested on CodePen for layout and responsiveness. All features work best in a local or GitHub-hosted environment.

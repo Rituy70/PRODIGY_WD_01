@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -249,7 +247,7 @@ footer {
   color: #555;
 }
 
-/* Scroll-triggered color change */
+
 section.active {
   background-color: #f0f8ff;
   color: #000;

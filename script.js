@@ -1,14 +1,14 @@
-// Accordion toggle for FAQ
+
 document.querySelectorAll(".faq-question").forEach((question) => {
   question.addEventListener("click", () => {
     const answer = question.nextElementSibling;
 
-    // Collapse all other answers
+    
     document.querySelectorAll(".faq-answer").forEach((ans) => {
       if (ans !== answer) ans.style.display = "none";
     });
 
-    // Toggle this one
+    
     if (answer.style.display === "block") {
       answer.style.display = "none";
     } else {
@@ -17,7 +17,7 @@ document.querySelectorAll(".faq-question").forEach((question) => {
   });
 });
 
-// Counselling card opens popup
+
 document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", () => {
     if (card.textContent.includes("Counselling")) {
@@ -26,14 +26,13 @@ document.querySelectorAll(".card").forEach((card) => {
   });
 });
 
-// Apply Now buttons open internship application form
+
 document.querySelectorAll(".apply-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     document.getElementById("popupForm").style.display = "flex";
   });
 });
 
-// Close buttons in both popups
 document.querySelectorAll(".close-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const overlay = btn.closest(".popup-overlay");
@@ -41,7 +40,7 @@ document.querySelectorAll(".close-btn").forEach((btn) => {
   });
 });
 
-// Toggle FAQ answers on click (duplicate — consider removing if not needed)
+
 document.querySelectorAll(".faq-question").forEach((btn) => {
   btn.addEventListener("click", () => {
     const answer = btn.nextElementSibling;

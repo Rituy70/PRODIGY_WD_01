@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProDigy Infotech Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo.jpg" alt="ProDigy Infotech Logo" style="height: 40px; vertical-align: middle;">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header id="home">
+    <div class="hero-content">
+      <h1>Welcome to <span>ProDigy Infotech</span></h1>
+      <p>Your gateway to innovation, learning, and technology.</p>
+      <p class="motto"><em>"Empowering Future Innovators Through Technology and Education"</em></p>
+      <p class="location"><strong>Headquarters: Mumbai, Maharashtra</strong></p>
+    </div>
+  </header>
+  <section id="about">
+  <h2>About Us</h2>
+  <div class="about-container">
+    <p>At <strong>ProDigy Infotech</strong>, we are passionate about shaping the next generation of tech leaders.</p>
+    <p>Founded with a mission to make quality technical education accessible, we provide hands-on internships, expert mentorship, and real-world projects to aspiring professionals.</p>
+    <p>Our core team consists of industry experts, educators, and developers who work together to bridge the gap between academics and industry expectations.</p>
+    <p>With headquarters in <strong>Mumbai, Maharashtra</strong>, we operate fully remotely and serve learners across India and beyond.</p>
+    <p>We believe in learning by doing — whether it's coding, designing, or cloud infrastructure — our programs focus on practical application and industry-ready skills.</p>
+    <p>Join us to become part of a dynamic community committed to innovation, collaboration, and continuous growth.</p>
+  </div>
+  </section>
+  
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">Web Development</div>
+      <div class="card">Internship Training</div>
+      <div class="card">Tech Consulting</div>
+      <div class="card">Counselling</div>
+      <div class="card">UI/UX Design</div>
+      <div class="card">Cloud Solutions</div>
+    </div>
+  </section>
+  <!-- Counselling Popup -->
+  <div class="popup-overlay" id="counsellingPopup">
+    <div class="popup-box">
+      <span class="close-btn" onclick="document.getElementById('counsellingPopup').style.display='none'">&times;</span>
+      <h2>Book a Counselling Session</h2>
+      <form id="counselling-booking" action="#" method="post">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <select required>
+          <option value="">Preferred Day</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="thursday">Thursday</option>
+        </select>
+        <select required>
+          <option value="">Preferred Time</option>
+          <option value="10am-12pm">10 AM - 12 PM</option>
+          <option value="2pm-4pm">2 PM - 4 PM</option>
+        </select>
+        <textarea placeholder="Questions or Topics for Counselling" rows="4"></textarea>
+        <button type="submit">Book Counselling</button>
+      </form>
+    </div>
+  </div>
+  <section id="internships">
+    <h2>Available Internships</h2>
+    <div class="internship">
+      <h3>Web Development Internship</h3>
+      <p>Work on real-world projects and gain practical skills in HTML, CSS, and JS.</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+    <div class="internship">
+      <h3>Python Programming Internship</h3>
+      <p>Learn data handling, scripting, and backend basics with Python.</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+    <div class="internship">
+      <h3>UI/UX Design Internship</h3>
+      <p>Master modern design principles, tools like Figma, and user research.</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+    <div class="internship">
+      <h3>Cloud Computing Internship</h3>
+      <p>Learn AWS, Azure, and cloud infrastructure tools to scale modern applications.</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">What is the duration of the internship?</button>
+        <div class="faq-answer" style="display: none;">
+          Our internships typically last between 4 to 6 weeks.<br>
+          Some advanced internships may extend to 8 weeks depending on the track.<br>
+          Short-term internships are also available for select programs.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do I get a certificate and LOR?</button>
+        <div class="faq-answer" style="display: none;">
+          Yes, every intern receives a certificate.<br>
+          Letter of Recommendation is awarded based on performance and completion of tasks.<br>
+          LORs can boost your resume and are recognized by many institutions.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are the internships remote and flexible?</button>
+        <div class="faq-answer" style="display: none;">
+          Yes, our internships are completely remote.<br>
+          You can complete the tasks at your own pace within the duration window.<br>
+          Live sessions and recordings are available to support your learning.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I apply for more than one internship?</button>
+        <div class="faq-answer" style="display: none;">
+          Absolutely, you can apply to multiple roles.<br>
+          However, it's recommended to complete one internship properly before applying for another.<br>
+          Each internship requires commitment to receive certification.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+      <div class="timing">Support: Mon-Fri, 10AM - 6PM</div>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 ProDigy Infotech. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  <div class="popup-overlay" id="popupForm">
+    <div class="popup-box">
+      <span class="close-btn" id="closeForm">&times;</span>
+      <h2>Apply for Internship</h2>
+      <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <select required>
+          <option value="">Select Internship</option>
+          <option value="web">Web Development</option>
+          <option value="python">Python Programming</option>
+          <option value="uiux">UI/UX Design</option>
+          <option value="cloud">Cloud Computing</option>
+        </select>
+        <textarea placeholder="Why should we hire you?" required></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll(".card").forEach((card) => {
+      card.addEventListener("click", () => {
+        if (card.textContent.includes("Counselling")) {
+          document.getElementById("counsellingPopup").style.display = "block";
+        }
+      });
+    });
+
+    document.querySelectorAll(".apply-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.getElementById("popupForm").style.display = "block";
+      });
+    });
+
+    document.getElementById("closeForm").addEventListener("click", () => {
+      document.getElementById("popupForm").style.display = "none";
+    });
+
+    const questions = document.querySelectorAll(".faq-question");
+    questions.forEach((q) => {
+      q.addEventListener("click", () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
